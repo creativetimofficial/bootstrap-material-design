@@ -218,7 +218,7 @@
       //height: $mdb-input-height-base;
       $bs-line-height-base: 1.428571429 !default;
       $bs-line-height-computed:    floor(($font-size-base * $bs-line-height-base)) !default; // ~20px
-      height: ($bs-line-height-computed + 8px);
+      height: ($bs-line-height-computed + 8); // aici 8px
       font-size: $font-size-base;
       line-height: $bs-line-height-base;
       //---

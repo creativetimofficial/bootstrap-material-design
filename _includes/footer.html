@@ -1,11 +1,78 @@
-<footer class="bd-footer text-muted">
-  <div class="container-fluid p-3 p-md-5">
-    <ul class="bd-footer-links">
-      <li><a href="{{ site.repo }}">GitHub</a></li>
-      <li><a href="{{ site.baseurl }}/examples/">Examples</a></li>
-      <li><a href="{{ site.baseurl }}/about/">About</a></li>
-    </ul>
-    <p>Designed and built by <a href="https://twitter.com/FezVrasta" target="_blank" rel="noopener">@FezVrasta</a> with the help of <a href="https://github.com/FezVrasta/bootstrap-material-design/graphs/contributors">our contributors</a>.</p>
-    <p>Currently v{{ site.current_version }}. Code licensed <a rel="license noopener" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license noopener" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
-  </div>
+<footer class="footer {% if page.brand == "presentation-page" %} footer-white {% endif %}">
+    <div class="container">
+        {% if page.brand == "index" %}
+            <nav class="float-left">
+                <ul>
+                    <li>
+                        <a href="http://www.creative-tim.com">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://presentation.creative-tim.com">
+                           About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.creative-tim.com">
+                           Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.creative-tim.com/license">
+                            Licenses
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright float-right">
+                &#xA9; <script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons">favorite</i> by Creative Tim for a better web.
+            </div>
+
+            {% elsif page.brand == "presentation-page" %}
+
+                <a class="footer-brand" href="http://www.creative-tim.com">Material Kit PRO</a>
+
+                <ul class="pull-center">
+                    <li>
+                        <a href="http://www.creative-tim.com/" target="_blank">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://presentation.creative-tim.com/" target="_blank">
+                           About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.creative-tim.com/" target="_blank">
+                           Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.creative-tim.com/license" target="_blank">
+                            Licenses
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="social-buttons float-right">
+                    <li>
+                        <a href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-just-icon btn-simple btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-just-icon btn-simple btn-dribbble">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-just-icon btn-simple btn-instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+        {% endif %}
+    </div>
 </footer>

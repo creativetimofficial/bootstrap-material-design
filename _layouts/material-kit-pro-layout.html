@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>{% include path/path-assets.html %}
+        {% include head.html %}
+    </head>
+
+    <body class="{{ page.class }}">
+        {% include navbar.html %}
+
+        {% if page.brand != "section" and page.brand != "template" %}
+            {% include page-header.html %}
+
+            <div class="main main-raised">
+                {{ content }}
+            </div>
+
+        {% else %}
+            {{ content }}
+
+        {% endif %}
+
+        {% include footer.html %}
+
+        {% include vertical-dots.html %}
+    </body>
+
+    {% include js/script.html %}
+
+</html>
