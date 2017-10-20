@@ -8,6 +8,22 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 
 <!--     Fonts and icons     -->
+<!-- Bootstrap core CSS -->
+
+<link href="{{ path-assets }}/assets/css/bootstrap-material-design.css" rel="stylesheet">
+
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" > -->
+<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+<!-- Documentation extras -->
+{% if page.layout == "docs" %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+{% endif %}
+<link href="{{ path-assets }}/assets/css/docs.min.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="{{ path-assets }}/apple-touch-icon.png">
+<link rel="icon" href="{{ path-assets }}/favicon.ico">
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
@@ -16,7 +32,7 @@
 <!-- <link href="{{ path-assets }}/assets/css/bootstrap.min.css" rel="stylesheet"> -->
 
 <!-- CSS Just for demo purpose, don't include it in your project -->
-<!-- <link href="{{ path-assets }}/assets/assets-for-demo/vertical-nav.css" rel="stylesheet"> -->
+<link href="{{ path-assets }}/assets/assets-for-demo/vertical-nav.css" rel="stylesheet">
 <link href="{{ path-assets }}/assets/assets-for-demo/demo.css" rel="stylesheet">
 
 <!-- <link href="{{ path-assets }}/assets/css/material-kit.css?v=1.2.0" rel="stylesheet"> -->
@@ -34,22 +50,3 @@
 </title>
 
 {% include social.html %}
-
-<!-- Bootstrap core CSS -->
-{% if site.github %}
-  <link href="{{ site.baseurl }}/dist/css/bootstrap-material-design.min.css" rel="stylesheet">
-{% else %}
-  <link href="{{ site.baseurl }}/dist/css/bootstrap-material-design.css" rel="stylesheet">
-{% endif %}
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" >
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<!-- Documentation extras -->
-{% if page.layout == "docs" %}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
-{% endif %}
-<link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
-
-<!-- Favicons -->
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
-<link rel="icon" href="{{ site.baseurl }}/favicon.ico">

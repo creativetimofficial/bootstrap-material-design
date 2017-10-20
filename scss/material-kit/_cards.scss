@@ -3,7 +3,6 @@
     position: relative;
     width: 100%;
     margin-bottom: 30px;
-
     border-radius: $border-radius-large;
     color: $mdb-card-body-text;
     background: $mdb-card-body-background;
@@ -24,12 +23,8 @@
     .card-image {
         height: 60%;
         position: relative;
-
         z-index: 1;
-
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: -30px;
+        margin: -30px 15px 0 15px !important;
         border-radius: $border-radius-large;
 
         img {
@@ -78,13 +73,10 @@
     .category:not([class*="text-"]){
         color: $gray-color;
     }
-    .card-content{
-        padding: 15px 30px;
-    }
-
-    .card-body {
+    .card-body{
+        padding: 15px 30px !important;
         height: 30%;
-        padding: 18px;
+
     }
 
     .card-footer {
@@ -93,20 +85,16 @@
         button, a {
             margin: 0 !important;
             position: relative;
-            bottom: 25px;
             width: auto;
-            &:first-child {
-                left: -15px;
-            }
         }
     }
 
-    .header{
-        @include shadow-big();
-        margin: $margin-base;
-        border-radius: $border-radius-base;
-        padding: $padding-base 0;
+    .card-header{
+        padding: 0 !important;
         background-color: $white-color;
+        &:first-child{
+            border-radius: $border-radius-large !important;
+        }
 
         .title{
             color: $white-color;
@@ -179,7 +167,7 @@
             border-color: rgba(255, 255, 255, 0.25);
         }
         .author a,
-        .footer .stats,
+        .card-footer .stats,
         .category,
         .card-description{
             color: $white-transparent;
@@ -255,7 +243,7 @@
         }
     }
 
-    .footer{
+    .card-footer{
         margin-top: 15px;
 
         div{
@@ -300,7 +288,7 @@
         margin-bottom: 0px;
         text-align: center;
     }
-    .card-content{
+    .card-body{
         padding: 0px 30px 0px 10px;
     }
 
@@ -357,7 +345,7 @@
         margin-right: 0;
     }
 
-    .card-content{
+    .card-body{
         padding-left: 5px;
         padding-right: 5px;
     }
@@ -380,7 +368,7 @@
 }
 
 .card-form-horizontal{
-    .card-content{
+    .card-body{
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -419,7 +407,7 @@
 
         @include shadow-big();
 
-        & + .card-content{
+        & + .card-body{
             margin-top: 15px;
         }
     }
@@ -436,7 +424,7 @@
         max-width: 100px;
         max-height: 100px;
     }
-    .footer{
+    .card-footer{
         margin-top: 0;
 
         .card-avatar{
@@ -486,7 +474,7 @@
     .card-title{
         margin-top: 30px;
     }
-    .card-content{
+    .card-body{
         padding: 15px !important;
     }
     .icon{
@@ -572,7 +560,7 @@
     background-size: cover;
     text-align: center;
 
-    .card-content{
+    .card-body{
         position: relative;
         z-index: 2;
         min-height: 280px;
@@ -612,7 +600,7 @@
 }
 
 .back-background{
-    .card-content{
+    .card-body{
         min-height: auto;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -625,7 +613,7 @@
         padding: 0;
     }
 
-    .footer{
+    .card-footer{
         margin-top: 5px;
         .price{
             h4{
@@ -691,7 +679,7 @@
             top: 0;
             left: 0;
 
-            .card-content{
+            .card-body{
                 height: 100%;
                 justify-content:center;
                 align-content:center;
@@ -735,18 +723,18 @@
                     background-color: rgba(0,0,0,.56);
                     border-radius: $border-radius-large;
                 }
-                .card-content{
+                .card-body{
                     position: relative;
                     z-index: 2;
                 }
             }
-            .footer{
+            .card-footer{
                 .btn{
                     margin: 0;
                 }
             }
 
-            .card-content{
+            .card-body{
                 padding-left: 15px;
                 padding-right: 15px;
             }

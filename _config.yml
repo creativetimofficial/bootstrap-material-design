@@ -9,8 +9,8 @@ kramdown:
 permalink:        pretty
 
 # Server
-source:           .
-destination:      ./_gh_pages
+# source:           .
+destination:      ./_site
 port:             9001
 baseurl:          "/bootstrap-material-design"
 url:              https://fezvrasta.github.io

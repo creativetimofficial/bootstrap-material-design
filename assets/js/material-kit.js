@@ -17,7 +17,7 @@ var big_image;
      BrowserDetect.init();
 
      // Init Material scripts for buttons ripples, inputs animations etc, more info on the next link https://github.com/FezVrasta/bootstrap-material-design#materialjs
-     $('body').bootstrapMaterialDesign();
+    //  $('body').bootstrapMaterialDesign();
 
      window_width = $(window).width();
 

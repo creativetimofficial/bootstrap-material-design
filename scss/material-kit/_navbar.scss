@@ -3,10 +3,8 @@
 .navbar {
   border: 0;
   border-radius: $border-radius-base;
-  //@include shadow-big-navbar();
-
+  @include shadow-big-navbar();
   @extend .animation-transition-fast;
-
   padding: 10px 0;
 
   .navbar-brand {
@@ -32,65 +30,71 @@
   }
 
   .navbar-nav {
-    > li > a {
-      color: inherit;
-      padding-top: 15px;
-      padding-bottom: 15px;
+    .nav-item{
+        .nav-link {
+          color: inherit;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-weight: $font-weight-default;
+          font-size: $mdb-btn-font-size-base;
+          text-transform: uppercase;
+          border-radius: $border-radius-base;
 
-      font-weight: $font-weight-default;
-      font-size: $mdb-btn-font-size-base;
-      text-transform: uppercase;
-
-      border-radius: $border-radius-base;
-
-      &:hover,
-      &:focus {
-        color: inherit;
-        background-color: transparent;
-      }
-
-
-      .material-icons,
-      .fa{
-            font-size: 20px;
-            max-width: 24px;
-      }
-
-      &:not(.btn-just-icon){
-          .fa{
-            position: relative;
-            top: 2px;
-            margin-top: -4px;
-            margin-right: 4px;
+          &:hover,
+          &:focus {
+            color: inherit;
+            background-color: transparent;
           }
-      }
+
+
+          .material-icons,
+          .fa{
+                font-size: 20px;
+                max-width: 24px;
+          }
+
+          &:not(.btn-just-icon){
+              .fa{
+                position: relative;
+                top: 2px;
+                margin-top: -4px;
+                margin-right: 4px;
+              }
+          }
+        }
+
+        .dropdown-menu{
+            margin-top: -20px;
+        }
+
+        &.open{
+            .dropdown-menu{
+                margin-top: 0;
+            }
+        }
+        &.active{
+            .nav-link{
+                &,
+                &:hover,
+                &:focus {
+                  color: inherit;
+                  background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+        &.disabled{
+            .nav-link{
+                &,
+                &:hover,
+                &:focus {
+                  color: inherit;
+                  background-color: transparent;
+                  opacity: 0.9;
+                }
+            }
+        }
     }
 
-    > li > .dropdown-menu{
-        margin-top: -20px;
-    }
-
-    > li.open > .dropdown-menu{
-        margin-top: 0;
-    }
-
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: inherit;
-        background-color: rgba(255, 255, 255, 0.1);
-      }
-    }
-    > .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        color: inherit;
-        background-color: transparent;
-        opacity: 0.9;
-      }
-    }
     .profile-photo{
         padding: 0;
         .profile-photo-small{

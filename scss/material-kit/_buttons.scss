@@ -5,12 +5,10 @@
     position: relative;
     padding: 12px 30px;
     margin: 10px 1px;
-
     font-size: $mdb-btn-font-size-base;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0;
-
     will-change: box-shadow, transform;
     transition: box-shadow 0.2s $mdb-animation-curve-fast-out-linear-in,
     background-color 0.2s $mdb-animation-curve-default;
@@ -94,10 +92,12 @@
     	@include social-buttons-color($social-behance);
     }
 
+    &,
     &:focus,
     &:active,
     &:active:focus{
-      outline: 0;
+      outline: 0 !important;
+      border: 0 !important;
     }
 
     &.btn-round{
@@ -193,10 +193,10 @@
 .btn{
     // Align icons inside buttons with text
     .material-icons{
-        vertical-align: middle;
-        font-size: $mdb-btn-icon-size-mini;
-        top: -1px;
-        position: relative;
+        vertical-align: middle !important;
+        font-size: $mdb-btn-icon-size-mini !important;
+        top: -1px !important;
+        position: relative !important;
     }
 
     .caret{
