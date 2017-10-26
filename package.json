@@ -28,7 +28,10 @@
     "build:js-min": "minify assets/js/bootstrap-material-design.js --out-file assets/js/bootstrap-material-design.min.js",
     "build:css": "node-sass --importer=node_modules/node-sass-tilde-importer scss/bootstrap-material-design.scss > assets/css/bootstrap-material-design.css && npm run build:css-min",
     "build:css-min": "cssnano assets/css/bootstrap-material-design.css assets/css/bootstrap-material-design.min.css",
-    "postpublish": "GIT_DEPLOY_DIR=dist GIT_DEPLOY_BRANCH=dist ./deploy.sh"
+    "postpublish": "GIT_DEPLOY_DIR=dist GIT_DEPLOY_BRANCH=dist ./deploy.sh",
+    "watch:css": "npm run build:css && npm run build:css -- --watch",
+    "watch": "concurrently --kill-others --names \"css\" \"npm run watch:css\"",
+    "watch:js": "npm run build:js -- --watch"
   },
   "style": "assets/css/bootstrap-material-design.css",
   "sass": "scss/_core.scss",
@@ -63,5 +66,8 @@
     "js/*.js",
     "scss/**/*.scss",
     "LICENSE"
-  ]
+  ],
+  "dependencies": {
+    "concurrently": "^3.5.0"
+  }
 }
