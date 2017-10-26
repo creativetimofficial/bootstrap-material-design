@@ -1,10 +1,11 @@
 
 
 .progress {
-    height: 4px;
-    border-radius: 0;
-    box-shadow: none;
-    background: #DDDDDD;
+    height: 4px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #DDDDDD !important;
+    margin-bottom: 20px !important;
     .progress-bar {
         box-shadow: none;
         @include variations(unquote(".progress-bar"), unquote(""), background-color, $brand-primary);

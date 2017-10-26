@@ -78,23 +78,23 @@
   }
   .dropdown-menu {
     border-radius: $border-radius-base !important;
-    li > a {
-      &:hover,
-      &:focus {
-        color: $white-color;
-        background-color: $variation-color;
+    .dropdown-item {
+        &:hover,
+        &:focus {
+            color: $white-color;
+            background-color: $variation-color;
 
-        @include shadow-small-color($variation-color);
-      }
+            @include shadow-small-color($variation-color);
+        }
     }
 
-    .active > a {
-      &:hover,
-      &:focus {
+    .active .dropdown-item {
+        &:hover,
+        &:focus {
+            color: $variation-color-text;
+        }
+        background-color: $variation-color;
         color: $variation-color-text;
-      }
-      background-color: $variation-color;
-      color: $variation-color-text;
     }
   }
 }
@@ -415,9 +415,9 @@
     &:active:hover,
     &.active:focus,
     &.active:hover,
-    .open > &.dropdown-toggle,
-    .open > &.dropdown-toggle:focus,
-    .open > &.dropdown-toggle:hover {
+    .show > &.dropdown-toggle,
+    .show > &.dropdown-toggle:focus,
+    .show > &.dropdown-toggle:hover {
       background-color: $btn-color;
       color: $white-color;
     }

@@ -1,20 +1,20 @@
 .btn,
-.navbar .navbar-nav > li > a.btn{
-    border: none;
-    border-radius: $border-radius-base;
-    position: relative;
-    padding: 12px 30px;
-    margin: 10px 1px;
-    font-size: $mdb-btn-font-size-base;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0;
-    will-change: box-shadow, transform;
+.navbar .navbar-nav .nav-item .nav-link.btn{
+    border: none !important;
+    border-radius: $border-radius-base !important;
+    position: relative !important;
+    padding: 12px 30px !important;
+    margin: 10px 1px !important;
+    font-size: $mdb-btn-font-size-base !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0 !important;
+    will-change: box-shadow, transform !important;
     transition: box-shadow 0.2s $mdb-animation-curve-fast-out-linear-in,
-    background-color 0.2s $mdb-animation-curve-default;
+    background-color 0.2s $mdb-animation-curve-default !important;
 
     &::-moz-focus-inner {
-    border: 0;
+    border: 0 !important;
     }
 
     &,
@@ -44,13 +44,13 @@
         &,
         &:focus,
         &:hover{
-            background-color: $white-color;
-            color: $gray-light;
+            background-color: $white-color !important;
+            color: $gray-light !important;
         }
         &.btn-simple{
-            color: #FFFFFF;
-            background: transparent;
-            box-shadow: none;
+            color: $white-color !important;
+            background: transparent !important;
+            box-shadow: none !important;
         }
     }
 
@@ -101,96 +101,89 @@
     }
 
     &.btn-round{
-      border-radius: $border-radius-extreme;
+      border-radius: $border-radius-extreme !important;
     }
 
     &:not(.btn-just-icon):not(.btn-fab){
       .fa{
-          font-size: 18px;
-          margin-top: -2px;
-          position: relative;
-          top: 2px;
+          font-size: 18px !important;
+          margin-top: -2px !important;
+          position: relative !important;
+          top: 2px !important;
       }
     }
 
 
     &.btn-fab {
         // see above for color variations
-        border-radius: 50%;
-        font-size: $mdb-btn-fab-font-size;
-        height: $mdb-btn-fab-size;
+        border-radius: 50% !important;
+        font-size: $mdb-btn-fab-font-size !important;
+        height: $mdb-btn-fab-size !important;
         margin: auto;
-        min-width: $mdb-btn-fab-size;
-        width: $mdb-btn-fab-size;
-        padding: 0;
-        overflow: hidden;
-        position: relative;
-        line-height: normal;
+        min-width: $mdb-btn-fab-size !important;
+        width: $mdb-btn-fab-size !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        position: relative !important;
+        line-height: normal !important;
 
         .ripple-container {
-          border-radius: 50%;
+          border-radius: 50% !important;
         }
 
         &.btn-fab-mini,
         .btn-group-sm & {
-            height: $mdb-btn-fab-size-mini;
-            min-width: $mdb-btn-fab-size-mini;
-            width: $mdb-btn-fab-size-mini;
+            height: $mdb-btn-fab-size-mini !important;
+            min-width: $mdb-btn-fab-size-mini !important;
+            width: $mdb-btn-fab-size-mini !important;
 
             &.material-icons {
-                top: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) / 2;
-                left: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) / 2;
+                top: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) / 2 !important;
+                left: ($mdb-btn-icon-size-mini - $mdb-btn-fab-font-size) / 2 !important;
             }
 
             .material-icons{
-                font-size: $mdb-btn-icon-size-mini;
+                font-size: $mdb-btn-icon-size-mini !important;
             }
         }
 
         i.material-icons {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-($mdb-btn-fab-font-size / 2), -($mdb-btn-fab-font-size / 2));
-          line-height: $mdb-btn-fab-font-size;
-          width: $mdb-btn-fab-font-size;
-          font-size: $mdb-btn-fab-font-size;
+          position: absolute !important;
+          top: 50% !important;
+          left: 50% !important;
+          transform: translate(-($mdb-btn-fab-font-size / 2), -($mdb-btn-fab-font-size / 2)) !important;
+          line-height: $mdb-btn-fab-font-size !important;
+          width: $mdb-btn-fab-font-size !important;
+          font-size: $mdb-btn-fab-font-size !important;
         }
     }
 
     // Size variations
     &.btn-lg,
     .btn-group-lg & {
-        font-size: $mdb-btn-font-size-lg;
-        padding: 18px 36px;
+        font-size: $mdb-btn-font-size-lg !important;
+        padding: 18px 36px !important;
     }
     &.btn-sm,
     .btn-group-sm & {
-        padding: 5px 20px;
-        font-size: $mdb-btn-font-size-sm;
+        padding: 5px 20px !important;
+        font-size: $mdb-btn-font-size-sm !important;
     }
-    &.btn-xs,
-    .btn-group-xs & {
-        padding: 4px 15px;
-        font-size: $mdb-btn-font-size-xs;
-    }
+
 
     &.btn-just-icon{
-        font-size: 20px;
-        padding: 12px 12px;
-        line-height: 1em;
+        font-size: 20px !important;
+        padding: 12px 12px !important;
+        line-height: 1em !important;
 
-        i{
-            width: 20px;
+        i.material-icons{
+            width: 20px !important;
         }
         &.btn-lg{
-            font-size: 22px;
-            padding: 13px 18px;
+            font-size: 22px !important;
+            padding: 13px 18px !important;
         }
     }
-}
-
-.btn{
     // Align icons inside buttons with text
     .material-icons{
         vertical-align: middle !important;
@@ -200,35 +193,41 @@
     }
 
     .caret{
-        margin-left: 3px;
-    }
-
-}
-
-.navbar .navbar-nav > li > {
-    a.btn{
-        margin-top: 2px;
-        margin-bottom: 2px;
-
-        &.btn-fab{
-            margin: 5px 2px;
-        }
-    }
-    a:not(.btn){
-        .material-icons{
-            margin-top: -3px;
-            top: 0px;
-            position: relative;
-            margin-right: 3px;
-        }
-    }
-    .profile-photo{
-        margin: 5px 2px;
+        margin-left: 3px !important;
     }
 }
 
-.navbar-default:not(.navbar-transparent) .navbar-nav > li > {
-    a.btn{
+
+.navbar{
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                &.btn{
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+
+                    &.btn-fab{
+                        margin: 5px 2px;
+                    }
+                }
+                &:not(.btn){
+                    .material-icons{
+                        margin-top: -3px;
+                        top: 0px;
+                        position: relative;
+                        margin-right: 3px;
+                    }
+                }
+                .profile-photo{
+                    margin: 5px 2px;
+                }
+            }
+        }
+    }
+}
+
+.navbar-default:not(.navbar-transparent) .navbar-nav .nav-item{
+    .nav-link.btn{
         &.btn-white.btn-simple{
             color: $gray;
         }
@@ -244,7 +243,7 @@
   margin: 10px 1px;
 
   .dropdown-menu {
-    border-radius: 0 0 $border-radius-base $border-radius-base;
+    border-radius: 0 0 $border-radius-base $border-radius-base !important;
   }
 
   &.btn-group-raised {
@@ -275,3 +274,11 @@
         font-size: 20px;
     }
 }
+
+
+// .btn:not(.btn-just-icon):not(.btn-fab) .fa{
+//     font-size: 18px !important;
+//     margin-top: -2px !important;
+//     position: relative !important;
+//     top: 2px !important;
+// }

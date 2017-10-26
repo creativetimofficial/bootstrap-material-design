@@ -1,14 +1,14 @@
 .dropdownjs {
-  position: relative;
+    position: relative;
 }
 .dropdownjs  * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 .dropdownjs > input {
-  width: 100%;
-  padding-right: 30px;
-  text-overflow: ellipsis;
-  outline: none !important;
+    width: 100%;
+    padding-right: 30px;
+    text-overflow: ellipsis;
+    outline: none !important;
 }
 
 .dropdownjs > ul {
@@ -28,32 +28,32 @@
     margin-top: 1px;
 }
 .dropdownjs > ul  > li {
-  list-style: none;
-  padding: 10px 20px;
+    list-style: none;
+    padding: 10px 20px;
 }
 .dropdownjs > ul  > li.dropdownjs-add {
-  padding: 0;
+    padding: 0;
 }
 .dropdownjs > ul  > li.dropdownjs-add > input {
-  border: 0;
-  padding: 10px 20px;
-  width: 100%;
+    border: 0;
+    padding: 10px 20px;
+    width: 100%;
 }
 
 /* Theme */
 .dropdownjs > input[readonly] {
-  cursor: pointer;
+    cursor: pointer;
 }
 select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
-  cursor: default;
+    cursor: default;
 }
 .dropdownjs > ul {
-  background: #FFF;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  padding: 5px 0px;
-  overflow: auto;
-  max-width: 500px;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    padding: 5px 0px;
+    overflow: auto;
+    max-width: 500px;
 
 }
 .dropdownjs > ul > li {

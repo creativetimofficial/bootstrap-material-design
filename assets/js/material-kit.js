@@ -26,21 +26,22 @@ var big_image;
 
      $navbar_collapse = $('.navbar').find('.navbar-collapse');
 
-     //  Activate the Tooltips
+    //  Activate the Tooltips
      $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
 
-     //    Activate bootstrap-select
+     // Activate bootstrap-select
      if($(".selectpicker").length != 0){
          $(".selectpicker").selectpicker();
      }
 
-     // Activate Popovers
+    //  Activate Popovers
      $('[data-toggle="popover"]').popover();
 
      // Active Carousel
  	$('.carousel').carousel({
        interval: 3000
      });
+
 
      //Activate tags
      //removed class label and label-color from tag span and replaced with data-color

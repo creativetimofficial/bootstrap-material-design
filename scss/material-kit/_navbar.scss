@@ -1,11 +1,12 @@
 
 
 .navbar {
-  border: 0;
-  border-radius: $border-radius-base;
+  border: 0 !important;
+  border-radius: $border-radius-base !important;
   @include shadow-big-navbar();
   @extend .animation-transition-fast;
-  padding: 10px 0;
+  padding: 10px 0 !important;
+  margin-bottom: 20px !important;
 
   .navbar-brand {
     position: relative;
@@ -32,13 +33,14 @@
   .navbar-nav {
     .nav-item{
         .nav-link {
-          color: inherit;
-          padding-top: 15px;
-          padding-bottom: 15px;
-          font-weight: $font-weight-default;
-          font-size: $mdb-btn-font-size-base;
-          text-transform: uppercase;
-          border-radius: $border-radius-base;
+            padding: 10px 15px;
+            padding-top: 23px;
+            padding-bottom: 15px;
+            color: inherit;
+            font-weight: $font-weight-default;
+            font-size: $mdb-btn-font-size-base;
+            text-transform: uppercase;
+            border-radius: $border-radius-base;
 
           &:hover,
           &:focus {
@@ -67,7 +69,7 @@
             margin-top: -20px;
         }
 
-        &.open{
+        &.show{
             .dropdown-menu{
                 margin-top: 0;
             }
@@ -96,7 +98,8 @@
     }
 
     .profile-photo{
-        padding: 0;
+        padding: 0 !important;
+        margin: 5px 2px !important;
         .profile-photo-small{
             height: 40px;
             width: 40px;
@@ -136,7 +139,7 @@
 
   // Dropdowns
   .navbar-nav {
-    > .open > a {
+    > .show > a {
       &,
       &:hover,
       &:focus {
@@ -153,7 +156,7 @@
       }
 
       // Dropdowns get custom display
-      .open .dropdown-menu {
+      .show .dropdown-menu {
         > .dropdown-header {
           border: 0;
           color: inherit;
@@ -199,10 +202,11 @@
   }
 
   .navbar-form {
-    margin: 4px 0 0;
     .form-group {
       margin: 0;
       padding: 0;
+      display: inline-block !important;
+
 
       .material-input:before,
       &.is-focused .material-input:after {

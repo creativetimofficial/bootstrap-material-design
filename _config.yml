@@ -57,3 +57,8 @@ cdn:
   popper:         https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js
   popper_hash:    "sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw"
   snackbar:       https://cdn.rawgit.com/FezVrasta/snackbarjs/1.1.0/dist/snackbar.min.js
+
+sass:
+    sass_dir: assets/_scss
+    style: uncompressed
+    sourcemap: true

@@ -7,22 +7,33 @@
     }
 
 
-    li > a{
+    .dropdown-item{
         font-size: $mdb-dropdown-font-size;
         padding: 10px 20px;
         margin: 0 5px;
         border-radius: $border-radius-small;
+
         @include transition($fast-transition-time, $transition-linear);
 
         &:hover,
         &:focus {
           @include shadow-small-color($brand-primary);
+          background-color: $brand-primary;
+          color: $white-color;
         }
+    }
+    .dropdown-header{
+        display: block;
+        padding: 3px 20px;
+        font-size: 12px;
+        line-height: 1.42857143;
+        color: #777;
+        white-space: nowrap;
     }
 
     &.dropdown-with-icons{
-        li > a{
-            padding: 12px 20px 12px 12px;
+        .dropdown-item{
+            padding: 12px 20px 12px 12px !important;
 
             .material-icons{
                 vertical-align: middle;
@@ -33,28 +44,34 @@
                 margin-right: 12px;
                 opacity: .5;
             }
+
+            position: relative !important;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $brand-primary;
+                color: $white-color;
+            }
         }
     }
 
-    li {
-        position: relative;
-        a:hover,
-        a:focus,
-        a:active {
-            background-color: $brand-primary;
-            color: #FFFFFF;
-        }
-    }
+
+
+
 
     .divider{
+        height: 1px;
+        overflow: hidden;
         margin: 5px 0;
+        background-color: rgba(0, 0, 0, 0.12);
     }
 
     .navbar &,
     .navbar.navbar-default &{
-        li{
-            > a:hover,
-            > a:focus{
+        .nav-item{
+            .nav-link:hover,
+            .nav-link:focus{
                 color: $white-color;
                 background-color: $brand-primary;
 
@@ -75,8 +92,8 @@
     opacity: 0;
 }
 
-.dropdown.open .dropdown-menu,
-.dropdown-menu.bootstrap-datetimepicker-widget.open{
+.dropdown.show .dropdown-menu,
+.dropdown-menu.bootstrap-datetimepicker-widget.show{
     opacity: 1;
     visibility: visible;
     @include transform-translate-y(1px);
@@ -87,7 +104,7 @@
         @include transform-translate-y(20px);
     }
 
-    &.open{
+    &.show{
         .dropdown-menu{
             opacity: 1;
             visibility: visible;

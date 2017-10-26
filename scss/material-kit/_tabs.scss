@@ -1,13 +1,13 @@
 
 
 .nav-tabs {
-    background: $brand-primary;
-    border: 0;
-    border-radius: $border-radius-base;
-    padding: 0 $padding-base;
+    background: $brand-primary !important;
+    border: 0 !important;
+    border-radius: $border-radius-base !important;
+    padding: 0 $padding-base !important;
 
-    > li {
-        > a {
+    .nav-item{
+        .nav-link{
             color: #FFFFFF;
             border: 0;
             margin: 0;
@@ -18,36 +18,33 @@
             text-transform: uppercase;
             font-size: $mdb-btn-font-size-base;
 
-            &:hover {
+            &:hover,
+            &:focus{
                 background-color: transparent;
-                border: 0;
+                border: 0 !important;
+                color: #FFFFFF !important;
+                font-weight: $font-weight-bold;
             }
         }
-        & > a,
-        & > a:hover,
-        & > a:focus {
-            background-color: transparent;
-            border: 0 !important;
-            color: #FFFFFF !important;
-            font-weight: $font-weight-bold;
-        }
-        &.disabled > a,
-        &.disabled > a:hover {
-            color: rgba(255,255,255,0.5);
+
+        &.disabled{
+            .nav-link,
+            .nav-link:hover{
+                color: rgba(255,255,255,0.5);
+            }
         }
 
         .material-icons{
             margin: -1px 5px 0 0;
         }
-    }
 
-    >li.active{
-        & > a,
-        & > a:hover,
-        & > a:focus {
-            background-color: rgba(255,255,255, .2);
-            transition: background-color .1s .2s;
-        }
-    }
 
+            .nav-link.active,
+            .nav-link.active:hover,
+            .nav-link.active:focus{
+                background-color: rgba(255,255,255, .2);
+                transition: background-color .1s .2s;
+            }
+
+    }
 }

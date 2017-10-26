@@ -44,8 +44,8 @@
   .open > &,
   &.show {
     //z-index: 999;
-    opacity: 1;
-    transform: scale(1);
+    // opacity: 1;
+    // transform: scale(1);
   }
 
   // Default the alignment of the dropdown to originate on the bottom right of the button
@@ -74,24 +74,24 @@
   // https://www.google.com/design/spec/components/menus.html#menus-specs
   .dropdown-item {
     // used to properly size the ripple container
-    position: relative;
+    // position: relative;
 
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 
-    min-width: $bmd-menu-item-min-width;
-    max-width: $bmd-menu-item-max-width;
-    min-height: $bmd-menu-item-min-height;
-
-    padding: $bmd-menu-item-padding-top $bmd-menu-item-padding-right
-      $bmd-menu-item-padding-bottom $bmd-menu-item-padding-left;
-
-    // FIXME: multi-line menu word wrapping doesn't work - see the maximum width example in menus.md
-    overflow: hidden;
-    line-height: $bmd-menu-line-height;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
+    // min-width: $bmd-menu-item-min-width;
+    // max-width: $bmd-menu-item-max-width;
+    // min-height: $bmd-menu-item-min-height;
+    //
+    // padding: $bmd-menu-item-padding-top $bmd-menu-item-padding-right
+    //   $bmd-menu-item-padding-bottom $bmd-menu-item-padding-left;
+    //
+    // // FIXME: multi-line menu word wrapping doesn't work - see the maximum width example in menus.md
+    // overflow: hidden;
+    // line-height: $bmd-menu-line-height;
+    // text-overflow: ellipsis;
+    // word-wrap: break-word;
 
     // Simple menus always maintain a 16dp margin (phone) or 24dp margin (tablet) to the left and right edges of the screen.
     @include media-breakpoint-up(md) {
