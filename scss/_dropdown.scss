@@ -59,17 +59,17 @@
   &.dropdown-menu-right {
     @include menu-bottom-right();
   }
-
-  .dropup > & {
-    @include menu-top-right();
-
-    &.dropdown-menu-left {
-      @include menu-top-left();
-    }
-    &.dropdown-menu-right {
-      @include menu-top-right();
-    }
-  }
+  // 
+  // .dropup > & {
+  //   @include menu-top-right();
+  //
+  //   &.dropdown-menu-left {
+  //     @include menu-top-left();
+  //   }
+  //   &.dropdown-menu-right {
+  //     @include menu-top-right();
+  //   }
+  // }
 
   // https://www.google.com/design/spec/components/menus.html#menus-specs
   .dropdown-item {

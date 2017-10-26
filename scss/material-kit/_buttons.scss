@@ -177,23 +177,23 @@
         line-height: 1em !important;
 
         i.material-icons{
-            width: 20px !important;
+            width: 20px;
         }
         &.btn-lg{
-            font-size: 22px !important;
-            padding: 13px 18px !important;
+            font-size: 22px;
+            padding: 13px 18px;
         }
     }
     // Align icons inside buttons with text
-    .material-icons{
-        vertical-align: middle !important;
-        font-size: $mdb-btn-icon-size-mini !important;
-        top: -1px !important;
-        position: relative !important;
+    i.material-icons{
+        vertical-align: middle;
+        font-size: $mdb-btn-icon-size-mini;
+        top: -1px;
+        position: relative;
     }
 
     .caret{
-        margin-left: 3px !important;
+        margin-left: 3px;
     }
 }
 

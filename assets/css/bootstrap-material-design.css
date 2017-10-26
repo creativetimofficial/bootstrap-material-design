@@ -1747,25 +1747,25 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     .btn.btn-just-icon i.material-icons, .btn-just-icon.custom-file-control::before i.material-icons,
     .navbar .navbar-nav .nav-item .nav-link.btn.btn-just-icon i.material-icons,
     .navbar .navbar-nav .nav-item .nav-link.btn-just-icon.custom-file-control::before i.material-icons {
-      width: 20px !important; }
+      width: 20px; }
     .btn.btn-just-icon.btn-lg, .btn-group-lg > .btn.btn-just-icon, .btn-group-lg > .btn-just-icon.custom-file-control::before, .btn-just-icon.btn-lg.custom-file-control::before,
     .navbar .navbar-nav .nav-item .nav-link.btn.btn-just-icon.btn-lg,
     .navbar .navbar-nav .nav-item .btn-group-lg > .nav-link.btn.btn-just-icon,
     .navbar .navbar-nav .nav-item .btn-group-lg > .nav-link.btn-just-icon.custom-file-control::before,
     .navbar .navbar-nav .nav-item .nav-link.btn-just-icon.btn-lg.custom-file-control::before {
-      font-size: 22px !important;
-      padding: 13px 18px !important; }
-  .btn .material-icons, .custom-file-control::before .material-icons,
-  .navbar .navbar-nav .nav-item .nav-link.btn .material-icons,
-  .navbar .navbar-nav .nav-item .nav-link.custom-file-control::before .material-icons {
-    vertical-align: middle !important;
-    font-size: 17px !important;
-    top: -1px !important;
-    position: relative !important; }
+      font-size: 22px;
+      padding: 13px 18px; }
+  .btn i.material-icons, .custom-file-control::before i.material-icons,
+  .navbar .navbar-nav .nav-item .nav-link.btn i.material-icons,
+  .navbar .navbar-nav .nav-item .nav-link.custom-file-control::before i.material-icons {
+    vertical-align: middle;
+    font-size: 17px;
+    top: -1px;
+    position: relative; }
   .btn .caret, .custom-file-control::before .caret,
   .navbar .navbar-nav .nav-item .nav-link.btn .caret,
   .navbar .navbar-nav .nav-item .nav-link.custom-file-control::before .caret {
-    margin-left: 3px !important; }
+    margin-left: 3px; }
 
 .navbar .navbar-nav .nav-item .nav-link.btn, .navbar .navbar-nav .nav-item .nav-link.custom-file-control::before {
   margin-top: 2px;
@@ -1887,6 +1887,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
       margin-top: -3px;
       margin-left: 7px;
       width: 0;
+      color: #FFFFFF;
       height: 0;
       box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
       -webkit-animation: checkbox-off 0.3s forwards;
@@ -14976,19 +14977,6 @@ h6 {
     right: 0;
     left: auto;
     transform-origin: 100% 0; }
-  .dropup > .dropdown-menu {
-    right: 0;
-    left: auto;
-    transform-origin: 100% 100%; }
-    .dropup > .dropdown-menu.dropdown-menu-left {
-      top: auto;
-      left: 0;
-      bottom: 100%;
-      transform-origin: 0 100%; }
-    .dropup > .dropdown-menu.dropdown-menu-right {
-      right: 0;
-      left: auto;
-      transform-origin: 100% 100%; }
   .dropdown-menu .dropdown-item {
     display: flex;
     flex-flow: row wrap;
